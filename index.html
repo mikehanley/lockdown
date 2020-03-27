@@ -34,7 +34,7 @@
   /* Set up the map with initial center and zoom level */
   var map = L.map('map', {
     center: [53.272722, -6.306942], // EDIT latitude, longitude to re-center map
-    zoom: 14,  // EDIT from 1 to 18 -- decrease to zoom out, increase to zoom in
+    zoom: 8,  // EDIT from 1 to 18 -- decrease to zoom out, increase to zoom in
     scrollWheelZoom: false
   });
 
@@ -63,7 +63,7 @@
     
   var circle_clayfarm = L.circle([53.257965, -6.201759], {
     color: 'red',
-    fillColor: 'green',
+    fillColor: 'red',
     fillOpacity: 0.1,
     radius: 2000
   }).addTo(map);
