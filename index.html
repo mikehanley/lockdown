@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>leaflet-map-simple</title>
+  <title>Branley Lockdown</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
 
@@ -25,7 +25,7 @@
 <body>
 
   <!-- Display the map and title with HTML division tags  -->
-  <div id="map-title">John's lockdown</div>
+  <div id="map-title">Branley Lockdown</div>
   <div id="map"></div>
 
   <!-- Create the map content with JavaScript (.js) -->
@@ -33,7 +33,7 @@
 
   /* Set up the map with initial center and zoom level */
   var map = L.map('map', {
-    center: [53.1377073,-6.0967071], // EDIT latitude, longitude to re-center map
+    center: [53.272722, -6.306942], // EDIT latitude, longitude to re-center map
     zoom: 14,  // EDIT from 1 to 18 -- decrease to zoom out, increase to zoom in
     scrollWheelZoom: false
   });
@@ -45,12 +45,12 @@
 
   /* Display a blue point marker with pop-up text */
   L.marker([53.1377073,-6.0967071]).addTo(map) // EDIT latitude, longitude to re-position marker
-  .bindPopup("Insert pop-up text here"); // EDIT pop-up text message
+  .bindPopup("Branley House"); // EDIT pop-up text message
 
-  var circle = L.circle([53.1377073,-6.0967071], {
-    color: 'green',
-    fillColor: 'green',
-    fillOpacity: 0.05,
+  var circle = L.circle([53.272722, -6.306942], {
+    color: 'blue',
+    fillColor: 'blue',
+    fillOpacity: 0.1,
     radius: 2000
   }).addTo(map);
 
